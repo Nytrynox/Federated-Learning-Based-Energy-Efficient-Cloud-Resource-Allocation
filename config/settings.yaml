@@ -1,0 +1,76 @@
+# Federated Learning Configuration
+federated_learning:
+  num_clients: 5
+  num_rounds: 10
+  local_epochs: 5
+  batch_size: 32
+  learning_rate: 0.01
+  model_architecture: "simple_cnn"
+  aggregation_method: "fedavg"
+
+# Energy Monitoring Configuration
+energy_monitoring:
+  monitoring_interval: 10  # seconds
+  energy_threshold: 0.8    # normalized threshold (0-1)
+  cpu_weight: 0.4
+  memory_weight: 0.3
+  network_weight: 0.3
+  enable_gpu_monitoring: true
+
+# Resource Allocation Configuration
+resource_allocation:
+  min_cpu_cores: 1
+  max_cpu_cores: 8
+  min_memory_gb: 2
+  max_memory_gb: 32
+  scaling_factor: 1.2
+  cooldown_period: 300  # seconds
+  allocation_strategy: "energy_aware"
+
+# Azure Configuration
+azure:
+  subscription_id: "${AZURE_SUBSCRIPTION_ID}"
+  resource_group: "rg-federated-learning"
+  location: "eastus"
+  container_registry: "acrfederatedlearning"
+  ml_workspace: "ml-federated-learning"
+  storage_account: "stfederatedlearning"
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+  cors_enabled: true
+  rate_limiting: true
+
+# Database Configuration
+database:
+  host: "${DB_HOST:localhost}"
+  port: 5432
+  name: "federated_learning_db"
+  username: "${DB_USERNAME}"
+  password: "${DB_PASSWORD}"
+
+# Redis Configuration
+redis:
+  host: "${REDIS_HOST:localhost}"
+  port: 6379
+  db: 0
+  password: "${REDIS_PASSWORD}"
+
+# Simulation Configuration
+simulation:
+  num_nodes: 10
+  simulation_duration: 3600  # seconds
+  data_distribution: "iid"   # iid, non_iid
+  network_latency_ms: 50
+  failure_rate: 0.1
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_path: "logs/federated_learning.log"
+  max_file_size: "10MB"
+  backup_count: 5

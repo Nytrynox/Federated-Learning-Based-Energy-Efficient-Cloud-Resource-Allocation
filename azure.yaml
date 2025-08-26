@@ -1,0 +1,22 @@
+name: federated-learning-energy-efficient
+services:
+  api:
+    project: ./src
+    host: containerapp
+    language: python
+    env:
+      - AZURE_SUBSCRIPTION_ID
+      - AZURE_RESOURCE_GROUP
+      - AZURE_STORAGE_CONNECTION_STRING
+      - DATABASE_URL
+      - REDIS_URL
+hooks:
+  predeploy:
+    windows:
+      - pwsh: |
+          Write-Host "Installing Python dependencies..."
+          pip install -r requirements.txt
+    posix:
+      - shell: |
+          echo "Installing Python dependencies..."
+          pip install -r requirements.txt

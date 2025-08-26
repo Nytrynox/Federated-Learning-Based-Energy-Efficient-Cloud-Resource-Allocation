@@ -1,0 +1,650 @@
+{
+  "config": {
+    "num_clients": 5,
+    "num_rounds": 10,
+    "epochs_per_round": 3,
+    "learning_rate": 0.001,
+    "dataset_size": 1000
+  },
+  "final_results": {
+    "test_accuracy": 0.44,
+    "test_loss": 1.887138843536377,
+    "total_energy": 2.5,
+    "total_time": 0.5710620880126953,
+    "energy_efficiency": 0.176
+  },
+  "training_history": [
+    {
+      "round": 1,
+      "duration": 0.2258000373840332,
+      "total_energy": 2.5,
+      "avg_loss": 2.3789371490478515,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 2.35931396484375,
+          "avg_loss": 2.4144256114959717,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 2.419806957244873,
+          "avg_loss": 2.4290505250295005,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 2.349569797515869,
+          "avg_loss": 2.427971045176188,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 2.40806245803833,
+          "avg_loss": 2.4380364418029785,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 2.3579325675964355,
+          "avg_loss": 2.404629945755005,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-2",
+        "client-2": "node-2",
+        "client-3": "node-2",
+        "client-4": "node-2",
+        "client-5": "node-3"
+      }
+    },
+    {
+      "round": 2,
+      "duration": 0.07161903381347656,
+      "total_energy": 2.5,
+      "avg_loss": 2.292344093322754,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 2.276803493499756,
+          "avg_loss": 2.3232058684031167,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 2.341768503189087,
+          "avg_loss": 2.352623780568441,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 2.286346197128296,
+          "avg_loss": 2.339536507924398,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 2.299090623855591,
+          "avg_loss": 2.3611841996510825,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 2.25771164894104,
+          "avg_loss": 2.3011383215586343,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-3",
+        "client-2": "node-3",
+        "client-3": "node-3",
+        "client-4": "node-6",
+        "client-5": "node-6"
+      }
+    },
+    {
+      "round": 3,
+      "duration": 0.04694700241088867,
+      "total_energy": 2.5,
+      "avg_loss": 2.2214294910430907,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 2.2253527641296387,
+          "avg_loss": 2.2649033864339194,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 2.2323508262634277,
+          "avg_loss": 2.2580931981404624,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 2.229463815689087,
+          "avg_loss": 2.250872850418091,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 2.229280948638916,
+          "avg_loss": 2.271639426549276,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 2.1906991004943848,
+          "avg_loss": 2.224207560221354,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-6",
+        "client-2": "node-6",
+        "client-3": "node-7",
+        "client-4": "node-7",
+        "client-5": "node-7"
+      }
+    },
+    {
+      "round": 4,
+      "duration": 0.02671504020690918,
+      "total_energy": 2.5,
+      "avg_loss": 2.160267782211304,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 2.158388376235962,
+          "avg_loss": 2.1830058892567954,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 2.1931233406066895,
+          "avg_loss": 2.193424860636393,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 2.1766510009765625,
+          "avg_loss": 2.1996188958485923,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 2.154413938522339,
+          "avg_loss": 2.208652973175049,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 2.118762254714966,
+          "avg_loss": 2.1679063638051352,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-7",
+        "client-2": "node-9",
+        "client-3": "node-9",
+        "client-4": "node-9",
+        "client-5": "node-9"
+      }
+    },
+    {
+      "round": 5,
+      "duration": 0.019767045974731445,
+      "total_energy": 2.5,
+      "avg_loss": 2.0666539669036865,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 2.040320873260498,
+          "avg_loss": 2.0823043982187905,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 2.0701842308044434,
+          "avg_loss": 2.0996150175730386,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 2.076035976409912,
+          "avg_loss": 2.1225038369496665,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 2.078801393508911,
+          "avg_loss": 2.1107240517934165,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 2.067927360534668,
+          "avg_loss": 2.1205267111460366,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-1",
+        "client-2": "node-1",
+        "client-3": "node-1",
+        "client-4": "node-1",
+        "client-5": "node-0"
+      }
+    },
+    {
+      "round": 6,
+      "duration": 0.021336078643798828,
+      "total_energy": 2.5,
+      "avg_loss": 2.0099662065505983,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 1.9926109313964844,
+          "avg_loss": 2.0232204596201577,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 1.9937998056411743,
+          "avg_loss": 2.039056897163391,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 2.0123045444488525,
+          "avg_loss": 2.045098304748535,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 2.0393543243408203,
+          "avg_loss": 2.059851805369059,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 2.011761426925659,
+          "avg_loss": 2.0220194657643638,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-0",
+        "client-2": "node-0",
+        "client-3": "node-0",
+        "client-4": "node-8",
+        "client-5": "node-8"
+      }
+    },
+    {
+      "round": 7,
+      "duration": 0.021481990814208984,
+      "total_energy": 2.5,
+      "avg_loss": 1.9315685987472535,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 1.9355627298355103,
+          "avg_loss": 1.9597335656483967,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 1.9307140111923218,
+          "avg_loss": 1.9745899438858032,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 1.912143349647522,
+          "avg_loss": 1.9456524054209392,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 1.930630087852478,
+          "avg_loss": 1.9800713459650676,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 1.948792815208435,
+          "avg_loss": 1.9760814905166626,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-8",
+        "client-2": "node-8",
+        "client-3": "node-5",
+        "client-4": "node-5",
+        "client-5": "node-5"
+      }
+    },
+    {
+      "round": 8,
+      "duration": 0.025955915451049805,
+      "total_energy": 2.5,
+      "avg_loss": 1.8749841928482056,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 1.8438551425933838,
+          "avg_loss": 1.8947898944218953,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 1.8904697895050049,
+          "avg_loss": 1.9158706665039062,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 1.903951644897461,
+          "avg_loss": 1.9213982025782268,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 1.8908113241195679,
+          "avg_loss": 1.9369444449742634,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 1.8458330631256104,
+          "avg_loss": 1.887274702390035,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-5",
+        "client-2": "node-4",
+        "client-3": "node-4",
+        "client-4": "node-4",
+        "client-5": "node-4"
+      }
+    },
+    {
+      "round": 9,
+      "duration": 0.023236989974975586,
+      "total_energy": 2.5,
+      "avg_loss": 1.8323832273483276,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 1.8420956134796143,
+          "avg_loss": 1.8595116535822551,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 1.832975149154663,
+          "avg_loss": 1.8648033539454143,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 1.7928498983383179,
+          "avg_loss": 1.834324876467387,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 1.8502706289291382,
+          "avg_loss": 1.8763500054677327,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 1.8437248468399048,
+          "avg_loss": 1.83872123559316,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-0",
+        "client-2": "node-0",
+        "client-3": "node-0",
+        "client-4": "node-0",
+        "client-5": "node-0"
+      }
+    },
+    {
+      "round": 10,
+      "duration": 0.021174907684326172,
+      "total_energy": 2.5,
+      "avg_loss": 1.7614853858947754,
+      "client_stats": [
+        {
+          "client_id": "client-1",
+          "final_loss": 1.7641290426254272,
+          "avg_loss": 1.7807721694310505,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-2",
+          "final_loss": 1.773808240890503,
+          "avg_loss": 1.8139243125915527,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-3",
+          "final_loss": 1.7580766677856445,
+          "avg_loss": 1.7503406604131062,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-4",
+          "final_loss": 1.7632697820663452,
+          "avg_loss": 1.7821330229441326,
+          "data_size": 160
+        },
+        {
+          "client_id": "client-5",
+          "final_loss": 1.748143196105957,
+          "avg_loss": 1.7972711722056072,
+          "data_size": 160
+        }
+      ],
+      "energy_data": {
+        "client-1": 0.5,
+        "client-2": 0.5,
+        "client-3": 0.5,
+        "client-4": 0.5,
+        "client-5": 0.5
+      },
+      "resource_allocation": {
+        "client-1": "node-0",
+        "client-2": "node-0",
+        "client-3": "node-0",
+        "client-4": "node-0",
+        "client-5": "node-0"
+      }
+    }
+  ],
+  "aggregation_history": [
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    },
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    },
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    },
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    },
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    },
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    },
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    },
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    },
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    },
+    {
+      "weights": {
+        "client-1": 0.2,
+        "client-2": 0.2,
+        "client-3": 0.2,
+        "client-4": 0.2,
+        "client-5": 0.2
+      },
+      "total_energy": 2.5,
+      "num_clients": 5
+    }
+  ]
+}

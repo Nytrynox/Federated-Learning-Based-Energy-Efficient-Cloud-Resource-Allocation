@@ -1,0 +1,36 @@
+# Federated Learning Configuration
+federated_learning:
+  num_clients: 5
+  rounds: 10
+  epochs_per_round: 3
+  learning_rate: 0.001
+  batch_size: 32
+  
+model:
+  input_size: 784
+  hidden_size: 128
+  num_classes: 10
+  dropout_rate: 0.2
+
+energy:
+  monitoring_interval: 1.0
+  optimization_enabled: true
+  target_efficiency: 0.8
+
+resource_allocation:
+  max_cpu_cores: 8
+  max_memory_gb: 16
+  energy_weight: 0.7
+  performance_weight: 0.3
+
+cloud:
+  num_nodes: 10
+  base_power_consumption: 50.0
+  enable_scaling: true
+
+simulation:
+  data_distribution: "non_iid"
+  network_latency_ms: 50
+  failure_rate: 0.1
+  visualization: true
+  save_results: true
